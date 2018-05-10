@@ -1,0 +1,25 @@
+{
+  "port": 3000,
+  "logger": {
+    "console": {
+      "level": "debug",
+      "colorize": true,
+      "timestamp": true
+    },
+    "rotate": {
+      "level": "debug",
+      "json": false,
+      "timestamp": true,
+      "filename": "logs/server.log",
+      "datePattern": "YYYY-MM-DD",
+      "maxFiles": 10
+    }
+  },
+  "database": {
+    "username": "testuser",
+    "password": "testuser",
+    "database": "content",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
