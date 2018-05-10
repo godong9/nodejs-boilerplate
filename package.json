@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "test": "mocha test/**/*.js"
+    "test": "./node_modules/mocha/bin/mocha test/**/*.js",
+    "apidoc": "./node_modules/apidoc/bin/apidoc -i components/ -o doc/"
   },
   "dependencies": {
     "config": "^1.30.0",
@@ -13,6 +14,7 @@
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.16.0",
+    "express-validator": "^5.2.0",
     "helmet": "^3.12.0",
     "http-errors": "~1.6.2",
     "lodash": "^4.17.10",
