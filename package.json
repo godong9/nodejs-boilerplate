@@ -9,6 +9,7 @@
     "apidoc": "./node_modules/apidoc/bin/apidoc -i components/ -o doc/"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "config": "^1.30.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
@@ -17,10 +18,12 @@
     "express-validator": "^5.2.0",
     "helmet": "^3.12.0",
     "http-errors": "~1.6.2",
+    "hystrixjs": "^0.2.0",
     "lodash": "^4.17.10",
     "moment": "^2.22.1",
     "morgan": "~1.9.0",
     "mysql2": "^1.5.3",
+    "rxjs": "^5.5.11",
     "sequelize": "^4.37.7",
     "winston": "^2.4.2",
     "winston-daily-rotate-file": "^3.1.3"
