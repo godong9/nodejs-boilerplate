@@ -75,6 +75,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/api1', (req, res) => {
+  console.log('CALL API1');
   apiTestCounter1 += 1;
 
   if (apiTestCounter1 % 2 === 0) {
@@ -89,6 +90,7 @@ router.get('/api1', (req, res) => {
 });
 
 router.get('/api2', (req, res) => {
+  console.log('CALL API2');
   apiTestCounter2 += 1;
 
   if (apiTestCounter2 % 2 === 0) {

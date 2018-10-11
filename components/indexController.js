@@ -5,7 +5,7 @@ const hystrixjs = require("hystrixjs");
 
 const userController = require('./users/usersController');
 const contentsController = require('./contents/contentsController');
-const testHystrixController = require('./testHystrixController');
+const testController = require('./testController');
 
 const hystrixStream = hystrixjs.hystrixSSEStream;
 const metricsFactory = hystrixjs.metricsFactory;
@@ -16,7 +16,7 @@ router.use('/users', userController);
 // contents API controller
 router.use('/contents', contentsController);
 
-router.use('/test', testHystrixController);
+router.use('/test', testController);
 
 /* GET home page. */
 router.get('/', (req, res) => {
