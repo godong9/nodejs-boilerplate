@@ -43,7 +43,7 @@ Promise.map([1, 2, 3], i => {
     return rejectPromise();
   }
   return randomPromise();
-})
+}, {concurrency: 5})
   .then(res => {
     console.log(res);
   })
